@@ -41,4 +41,9 @@ public class Flight extends Plane{
     public int checkPassengers(){
         return this.passengers.size();
     }
+    public int findRemainingCapacity(){
+        int bookedPassengers=passengers.size();
+        int remainingCapacity=this.capacity-bookedPassengers;
+        return remainingCapacity;
+    }
 }
